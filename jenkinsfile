@@ -7,7 +7,7 @@ pipeline
         {
             steps
             {
-                 git 'https://github.com/intelliqittrainings/maven.git'
+                 git 'https://github.com/monu-19/mavenab.git'
             }
         }
         stage('ContinuousBuild')
@@ -26,7 +26,7 @@ pipeline
         }
         stage('ContinuousTesting')
         {
-            steps
+           steps
             {
                 git 'https://github.com/intelliqittrainings/FunctionalTesting.git'
                 sh 'java -jar /home/ubuntu/.jenkins/workspace/ScrpittedPipeline3/testing.jar'
